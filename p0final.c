@@ -1,8 +1,9 @@
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
-  char a[50];
-  printf ("my name is Harsha\n");
-  printf ("my id i 13713");
-return 0;
+  char name[20];
+  printf("enter your name\n");
+  scanf("%s",name);
+  printf("%s\n",name);
+  return 0;
 }

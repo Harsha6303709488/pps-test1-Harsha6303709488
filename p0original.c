@@ -1,9 +1,9 @@
-# include <stdio.h>
+#include<stdio.h>
 int main()
 {
-  char a[50];
+  char name[20];
   printf("enter your name\n");
-  scanf("%s",a);
-  printf("%s",a);
+  scanf("%s",name);
+  printf("%s\n",name);
   return 0;
 }
