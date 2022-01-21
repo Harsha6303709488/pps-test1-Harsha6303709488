@@ -1,3 +1,4 @@
+gcc -g p3original.c
  gdb a.out
 GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
 Copyright (C) 2018 Free Software Foundation, Inc.
@@ -15,32 +16,28 @@ For help, type "help".
 Type "apropos word" to search for commands related to "word"...
 Reading symbols from a.out...done.
 (gdb) b main
-Breakpoint 1 at 0x772: file p3original.c, line 6.
+Breakpoint 1 at 0x7fc: file p3original.c, line 16.
 (gdb) r
 Starting program: /home/runner/pps-test1-Harsha6303709488-17/a.out 
 warning: Error disabling address space randomization: Operation not permitted
 
-Breakpoint 1, main () at p3original.c:6
-6   {
+Breakpoint 1, main () at p3original.c:16
+16  {
 (gdb) n
-8     printf("enter any two numbers\n");
+18      input(&a,&b);
 (gdb) n
-enter any two numbers
-9     input(&a,&b);
-(gdb) n
+enter two numbers
 n
-10    add(a,b,&c);
+19      add(a,b,&sum);
 (gdb) n
-11    output(a,b,c);
+20      output(a,b,sum);
 (gdb) n
-12    return 0;
+sum of 21935 + -585112624 is -585090689
+21      return 0;
 (gdb) n
-13  }
-(gdb) n
-__libc_start_main (main=0x555c52e0076a <main>, argc=1, argv=0x7ffef428ff88, 
+22  }(gdb) n
+__libc_start_main (main=0x55afadc007f4 <main>, argc=1, argv=0x7ffcdd1fe3d8, 
     init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, 
-    stack_end=0x7ffef428ff78) at ../csu/libc-start.c:344
+    stack_end=0x7ffcdd1fe3c8) at ../csu/libc-start.c:344
 344 ../csu/libc-start.c: No such file or directory.
-(gdb) Quit
-(gdb) Quit
-(gdb)
+(gdb) 
